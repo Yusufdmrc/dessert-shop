@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --primary-color: #f7f7f7;
+  --secondary-color: #644220;
+  --border: 0.1rem solid rgba(58, 53, 53, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: 0.3 ease;
+  text-transform: capitalize;
+}
+
+/* HTML Codes */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: var(--primary-color);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+section {
+  padding: 4rem 10%;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  display: inline-block;
+  border-radius: 20rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn:hover {
+  color: var(--secondary-color);
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.title {
+  color: #644220;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  border-bottom: 0.3rem solid var(--secondary-color);
+}
+
+.title span {
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+/* Header Start */
+
+.header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  border-radius: 10rem;
+  padding: 2rem 7%;
+  margin: 2rem 7%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.95);
+}
+
+.header .logo img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 30rem;
+}
+
+.header .navbar a {
+  color: var(--secondary-color);
+  margin: 0 2rem;
+  font-size: 2rem;
+  border-bottom: 0.2rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(--border);
+  padding-bottom: 0.2rem;
+}
+
+.header .buttons button {
+  background-color: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.header #menu-btn {
+  display: none;
+}
+
+/* Header End */
+
+/* Home Start */
+
+.homepage {
+  background: url(/images/home3.jpg) no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: -13rem;
+}
+
+.homepage .content {
+  max-width: 60rem;
+}
+
+.homepage .content h4 {
+  color: #fff;
+  font-size: 5.1rem;
+}
+
+.homepage .content p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 2rem 0;
+  font-weight: 300;
+}
+
+/* Home End */
+
+/* Menu Start */
+
+.menu .menu-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.menu .menu-card-container .menu-card {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 60rem;
+  padding: 3rem;
+}
+
+.menu .menu-card-container .menu-card img {
+  width: 100%;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 15rem;
+  margin-top: 3rem;
+}
+
+.menu .menu-card-container .menu-card h3 {
+  font-size: 3.2rem;
+  padding: 2rem 0;
+}
+
+.menu .menu-card-container .menu-card .price {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.menu .menu-card-container .menu-card .price span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.menu .menu-card-container .menu-card .btn {
+  background-color: var(--primary-color);
+  color: #644220;
+  width: 15rem;
+}
+/*Menu End*/
