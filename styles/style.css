@@ -209,7 +209,8 @@ a {
 .menu .menu-card-container .menu-card .btn {
   background-color: var(--primary-color);
   color: #644220;
-  width: 15rem;
+  width: 13rem;
+  margin: 0;
 }
 /*Menu End*/
 
@@ -310,7 +311,7 @@ p,
 
 /* Contact End */
 
-/* Header Start*/
+/* Footer Start*/
 
 .footer {
   background-color: var(--secondary-color);
@@ -322,4 +323,59 @@ p,
   font-size: 2rem;
 }
 
-/* Header End*/
+/* Footer End*/
+
+/* Responsive Start */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .header .logo .img {
+    height: 7rem;
+  }
+
+  section {
+    padding: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    width: 35%;
+    height: calc(100vh - 25rem);
+    top: 99%;
+    right: -100%;
+    background-color: var(--secondary-color);
+  }
+
+  .header .navbar.active {
+    right: 2rem;
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* Responsive End */
